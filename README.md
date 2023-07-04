@@ -1,6 +1,6 @@
 # Description
 
-This is a quickstart boilerplate with settings for creating node packages with typescript.
+This is a quickstart boilerplate with settings for creating node packages with typescript. ESBuild will be used as the transpiler.
 
 # Dev instructions
 
@@ -12,4 +12,3 @@ This is a quickstart boilerplate with settings for creating node packages with t
 
 1. Run `npm run build`. This will create all necessary files.
 1. Run `npm publish`. This will now release your package in the npm registry.
-# typescript-esbuild-boilerplate
