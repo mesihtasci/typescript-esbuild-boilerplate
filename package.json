@@ -1,0 +1,25 @@
+{
+  "name": "@mesihtasci/typescript-esbuild-boilerplate",
+  "version": "0.0.10",
+  "description": "A typescript esbuild boilerplate. Project can also easily released into the npm registry.",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "nodemon",
+    "dev": "live-server --open=./examples/index.html",
+    "build": "esbuild ./src/index.ts --bundle --loader:.ts=ts --outfile=./dist/index.js --format=esm --minify --sourcemap",
+    "postbuild": "node dtsGenerator.js"
+  },
+  "repository": "git+https://github.com/mesihtasci/typescript-esbuild-boilerplate.git",
+  "author": "Mesih Tasci (mesih.t@gmail.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/mesihtasci/typescript-esbuild-boilerplate#readme",
+  "devDependencies": {
+    "esbuild": "^0.18.11",
+    "nodemon": "^2.0.22",
+    "npm-dts": "^1.3.12",
+    "typescript": "^5.1.6"
+  }
+}
